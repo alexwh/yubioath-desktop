@@ -389,7 +389,7 @@ Pane {
                 Material.background: toolTipBackground
             }
 
-            icon.source: "../images/star_border.svg"
+            icon.source: favorite ? "../images/star.svg" : "../images/star_border.svg"
             icon.color: hovered || favorite ? icon.color : primaryColor
             opacity: hovered || favorite ? fullEmphasis : disabledEmphasis
             implicitHeight: 30
